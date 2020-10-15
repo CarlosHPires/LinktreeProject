@@ -1,0 +1,79 @@
+:root {
+  --main-font-family: 'Poppins', sans-serif; 
+  --background-color: linear-gradient(#0E376D, #1F487E);
+  --light-font-color: #ffffff;
+  --image-border-color: #ffffff;
+  --dark-font-color: #010101;
+  --cards-background-color: #ffffff;
+  --cards-hover-background-color: #9db4d3;
+}
+
+* {
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: var(--background-color);
+  font-family: var(--main-font-family);
+  color: var(--light-font-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-wrapper {
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-wrapper img {
+  margin-top: 70px;
+  margin-bottom: 10px;
+  border: 3px solid var(--image-border-color);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.content-wrapper h1 {
+  text-align: center;
+}
+
+.social-medias {
+  margin-top: 50px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.social-medias .social-media-item {
+  color:var(--dark-font-color);
+  background: var(--cards-background-color); 
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-medias .social-media-item:hover {
+  background: var(--cards-hover-background-color);
+  transition: .3s;
+}
+
+.social-medias .social-media-item strong {
+  font-size: 22px;
+}
+
+.social-medias .social-media-item i {
+  font-size: 40px
+}
