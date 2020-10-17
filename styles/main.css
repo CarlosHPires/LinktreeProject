@@ -1,0 +1,119 @@
+:root {
+  --main-font-family: 'Poppins', sans-serif;
+  --background-color: linear-gradient(#44386B, #564787);
+  --color-light-font-color: #ffffff;
+  --color-image-border-color: #ffffff;
+  --color-text-black: #000000;
+  --color-button-secondary-light: #04D361;
+  --color-button-secondary-dark: #0faa55;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:after {
+  content: "";
+}
+
+
+body {
+  padding: 80px 0;
+  height: 100vh;
+  background: var(--background-color);
+  font-family: var(--main-font-family);
+  color: var(--color-light-font-color);
+}
+
+.content-wrapper {
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-wrapper img {
+  margin-top: 70px;
+  margin-bottom: 10px;
+  border: 2px solid var(--color-image-border-color);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.content-wrapper h1 {
+  text-align: center;
+}
+
+#social-medias {
+  margin-top: 50px;
+  max-width: 500px;
+  width: 90%;
+
+}
+
+#social-medias .social-media-item {
+  position: relative;
+  color: var(--color-text-black);
+  background: var(--color-button-secondary-light);
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+#social-medias .social-media-item:hover {
+  background: var(--color-button-secondary-dark);
+  transition: .2s;
+}
+
+#social-medias .social-media-item:after {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  width: 70px;
+  height: 100%;
+  opacity: .5;
+  transform: perspective(400px) rotateY(90deg);
+  transform-origin: 0 100%;
+  transition: all .4s ease-out;
+}
+
+#social-medias .social-media-item:nth-child(1):after {
+  content: "Work";
+  line-height: 88px;
+}
+
+#social-medias .social-media-item:hover {
+  transform: translateX(40px);
+}
+
+#social-medias .social-media-item:hover:after {
+  opacity: 1;
+  transform: perspective(400px) rotateY(0deg) scale(1);
+}
+
+#social-medias .social-media-item strong {
+  font-size: 22px;
+}
+
+#social-medias .social-media-item i {
+  font-size: 40px;
+}
