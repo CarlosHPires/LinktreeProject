@@ -30,6 +30,9 @@ body {
   height: 100vh;
   background: var(--background-color);
   font-family: var(--main-font-family);
+}
+.content-wrapper h1, p
+{
   color: var(--color-light-font-color);
 }
 
@@ -78,6 +81,10 @@ a {
   display: flex;
   align-items: center;
 }
+#social-medias .social-media-item ul li 
+{
+  list-style:none;
+}
 
 #social-medias .social-media-item:hover {
   background: var(--color-button-secondary-dark);
@@ -102,7 +109,7 @@ a {
 }
 
 #social-medias .social-media-item:hover {
-  transform: translateX(40px);
+  transform: translateX(60px);
 }
 
 #social-medias .social-media-item:hover:after {
